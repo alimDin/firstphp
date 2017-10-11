@@ -37,8 +37,8 @@
        
        
        $pieces = explode("/", $date1);
-       echo "Number of words in \$Date "count($pieces);
+       echo "Number of words in \$Date ".count($pieces)."<br>";
 
-       echo "String length in \$Date " strlen($date1)
+       echo "String length in \$Date " .strlen($date1)."<br>";
 
 ?>
