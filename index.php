@@ -25,24 +25,7 @@
             echo "The Future!";
          }
 
-    $result = $date->format('Y-m-d H:i:s');
-    $character = "/";
-    $lastPos = 0;
-    $positions = array();
-
-     while (($lastPos = strpos($result, $character, $lastPos))!== false) 
-     {
-    $positions[] = $lastPos;
-    $lastPos = $lastPos + strlen($character);
-     }
-
-     foreach ($positions as $value) {
-         echo $value ."<br />";
-    }
-
-// Displays 3 and 10
-foreach ($positions as $value) {
-    echo $value ."<br />";
-}
+    $i= strpos($date, '/')
+   echo $i;
 
 ?>
