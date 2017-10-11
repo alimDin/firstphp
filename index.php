@@ -49,4 +49,22 @@
 
        $split = explode("/", $date1);
        print_r(array_values($split));
+
+
+    function isLeap($i)  
+    {  
+    return (date('L', mktime(0, 0, 0, 1, 1, $year))==1);  
+    }  
+//For testing  
+    for($i=$year[0]; $i<= count($year); $i++)  
+    {  
+    If (isLeap($year))  
+    {  
+        echo "$i : LEAP YEAR<br />\n";  
+    }  
+    else  
+    {  
+        echo "$i: Not leap year<br />\n";  
+    }  
+}  
 ?>
