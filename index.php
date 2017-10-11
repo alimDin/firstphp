@@ -46,4 +46,7 @@
 
        $newstring = substr($date1, -2);
        echo "Last two character of string are ".($newstring). "<br>";
+
+       $split = explode("/", $date1);
+       print_r(array_values($split));
 ?>
