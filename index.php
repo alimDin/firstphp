@@ -8,7 +8,16 @@
 	print_r($year);
 	
 
-    $date =  date('Y/m/d', time());
+    $date1 =  date('Y/m/d', time());
     echo "The value of \$date: ".$date."<br>";
+
+    if(strtotime($date) < strtotime($dtar))
+    	 {
+            echo "The Past";
+         }
+    else
+         {
+            echo "Have a good night!";
+         }
 
 ?>
