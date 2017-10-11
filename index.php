@@ -25,12 +25,12 @@
             echo "The Future!";
          }
 
-   
+    $result = $date->format('Y-m-d H:i:s');
     $character = "/";
     $lastPos = 0;
     $positions = array();
 
-     while (($lastPos = strpos($date, $character, $lastPos))!== false) 
+     while (($lastPos = strpos($result, $character, $lastPos))!== false) 
      {
     $positions[] = $lastPos;
     $lastPos = $lastPos + strlen($character);
