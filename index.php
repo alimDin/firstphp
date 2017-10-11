@@ -7,7 +7,7 @@
 	echo "The value of \$year: ";
 	print_r($year);
 
-    $date =  date('Y-m-d', time());
+    $date =  date('Y/m/d', time());
     echo "The value of \$date: ".$date."<br>";
 
 ?>
