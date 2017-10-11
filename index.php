@@ -60,11 +60,11 @@
     {  
     if (isLeap($i))  
     {  
-        echo "$i : LEAP YEAR<br />\n";  
+        echo $i .": LEAP YEAR<br />\n";  
     }  
     else  
     {  
-        echo "$i: Not leap year<br />\n";  
+        echo $i.": Not leap year<br />\n";  
     }  
 }  
 ?>
