@@ -7,9 +7,11 @@
 	echo "The value of \$year: ";
 	print_r($year);
 	echo "<br>";
+	echo "<br>";
+	echo "<br>";
 
     $date1 =  date('Y/m/d', time());
-    echo "The value of \$date: ".$date."<br>";
+    echo "The value of \$date: ".$date1."<br>";
 
     if
            (strtotime($date) < strtotime($dtar))
