@@ -51,20 +51,8 @@
        print_r(array_values($split));
 
 
-    function isLeap($i)  
-    {  
-    return (date('L', mktime(0, 0, 0, 1, 1, $i))==1);  
-    }  
-//For testing  
-    for($t=$year[0]; $t<= count($year); $t++)  
-    {  
-    if (isLeap($i))  
-    {  
-        echo $i .": LEAP YEAR<br />\n";  
-    }  
-    else  
-    {  
-        echo $i.": Not leap year<br />\n";  
-    }  
- 
+       foreach ($year as $value) 
+       {
+       echo "$value <br>";
+}
 ?>
