@@ -25,15 +25,13 @@
             echo "The Future!";
          }
    
-        $k=0;
-        $occurences = occurence();
-    for($x=1; $x<= strlen($date1); $x++)
-       { 
-       $i= strpos($date1, '/', $k);
-       $k++;
-       array_push($occurences, $i);
+  
        
-       }
-       echo $occurences;
+       $i= strpos($date1, '/');
+       $j= strrpos($date1, '/');
+
+       echo "The / appears on position".$i." & ".$j;
+       
+       
 
 ?>
