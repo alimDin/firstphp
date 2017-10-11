@@ -13,11 +13,11 @@
 
     if(strtotime($date) < strtotime($dtar))
     	 {
-            echo "The Past";
+            echo "The Past!";
          }
     else
          {
-            echo "Have a good night!";
+            echo "The Future!";
          }
 
 ?>
