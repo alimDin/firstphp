@@ -24,30 +24,16 @@
          {
             echo "The Future!";
          }
-
-         $i=0;
-         $s=0;
-         $n='/';
-    while (is_integer($i))
-    {
-    	$i= strpos($date1, $n);
-
-      if(is_integer($i))
-      {
-      	      $aStrPos[] = $i;
-              $s = $i + mb_strlen($n);
-      }
-    }
-
-    if(isset($aStrPos)) 
-    {
-    return $aStrPos;
-    } 
-    else 
-    {
-    return false;
-    }
-
-    
+   
+        $k=0;
+        $occurences = occurence();
+    for($x=1; $x<= strlen($date1); $x++)
+       { 
+       $i= strpos($date1, '/', $k);
+       $k++;
+       array_push($occurences, $i);
+       
+       }
+       echo $occurences;
 
 ?>
