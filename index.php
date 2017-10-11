@@ -56,9 +56,9 @@
     return (date('L', mktime(0, 0, 0, 1, 1, $i))==1);  
     }  
 //For testing  
-    for($i=$year[0]; $i<= count($year); $i++)  
+    for($t=$year[0]; $t<= count($year); $t++)  
     {  
-    if (isLeap($year))  
+    if (isLeap($i))  
     {  
         echo "$i : LEAP YEAR<br />\n";  
     }  
