@@ -6,7 +6,7 @@
 	$year = array("2012", "396", "300","2000", "1100", "1089");
 	echo "The value of \$year: ";
 	print_r($year);
-	
+	echo "<br>";
 
     $date1 =  date('Y/m/d', time());
     echo "The value of \$date: ".$date."<br>";
@@ -14,15 +14,15 @@
     if
            (strtotime($date) < strtotime($dtar))
     	 {
-            echo "The Past!";
+            echo "The Past! <br>";
          }
     elseif (strtotime($date) == strtotime($dtar)) 
          {
-            echo "Same Day";
+            echo "Same Day <br>";
          }
     else
          {
-            echo "The Future!";
+            echo "The Future! <br>";
          }
    
   
