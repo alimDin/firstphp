@@ -25,7 +25,29 @@
             echo "The Future!";
          }
 
-    $i= strpos($date1, '/');
-    echo $i;
+         $i=0;
+         $s=0;
+         $n='/';
+    while (is_integer($i))
+    {
+    	$i= strpos($date1, $n);
+
+      if(is_integer($i))
+      {
+      	      $aStrPos[] = $i;
+              $s = $i + mb_strlen($n);
+      }
+    }
+
+    if(isset($aStrPos)) 
+    {
+    return $aStrPos;
+    } 
+    else 
+    {
+    return false;
+    }
+
+    
 
 ?>
