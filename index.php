@@ -50,20 +50,20 @@
        $split = explode("/", $date1);
        print_r(array_values($split));
 
-       $b = b();
-       foreach ($year as $value) 
-       	
-         {
-         if ($value /4 === 0)
-         {
-            $b+= $value."Is a Leap Year";
-         }
-         else
-         {
-         	$b+= $value."Not a Leap Year";
-         }
        
+       foreach ($year as $value) 
+       {
+       	if ((($value % 4) == 0) && ((($value % 100) != 0) || (($value % 400)==0)))
+       	{
+
+       	 echo "$value: True | ";
+       	}
+       	else
+       	 {
+          echo "$value: False |";
+       	}
        }
-       echo $b;
+
+      
 
 ?>
