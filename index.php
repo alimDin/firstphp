@@ -58,7 +58,7 @@
 //For testing  
     for($i=$year[0]; $i<= count($year); $i++)  
     {  
-    If (isLeap($year))  
+    if (isLeap($year))  
     {  
         echo "$i : LEAP YEAR<br />\n";  
     }  
