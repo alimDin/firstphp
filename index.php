@@ -25,7 +25,7 @@
             echo "The Future!";
          }
 
-    $i= strpos($date, '/')
-   echo $i;
+    $i= strpos($date1, '/')
+    echo $i;
 
 ?>
