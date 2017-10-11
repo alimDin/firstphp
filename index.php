@@ -32,8 +32,11 @@
        $i= strpos($date1, '/');
        $j= strrpos($date1, '/');
 
-       echo "The / appears on position".$i." & ".$j;
+       echo "The / appears on positions ".$i." & ".$j;
+       echo "<br>";
        
        
+       $pieces = explode("/", $date1);
+       echo count($pieces);
 
 ?>
