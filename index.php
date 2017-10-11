@@ -66,5 +66,5 @@
     {  
         echo $i.": Not leap year<br />\n";  
     }  
-}  
+ 
 ?>
