@@ -42,6 +42,8 @@
        echo "String length in \$Date = " .strlen($date1)."<br>";
 
        $firstval= $date1[0];
-       echo ord($firstval);
+       echo "The value of first letter's ASCII value is ".ord($firstval). "<br>";
 
+       $newstring = substr($date1, -2);
+       echo "Last two character of string are ".($newstring). "<br>";
 ?>
