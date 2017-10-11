@@ -49,7 +49,8 @@
 
        $split = explode("/", $date1);
        print_r(array_values($split));
-
+       echo "<br>";
+       echo "Leap Years";
        
        foreach ($year as $value) 
        {
