@@ -53,7 +53,7 @@
 
     function isLeap($i)  
     {  
-    return (date('L', mktime(0, 0, 0, 1, 1, $year))==1);  
+    return (date('L', mktime(0, 0, 0, 1, 1, $i))==1);  
     }  
 //For testing  
     for($i=$year[0]; $i<= count($year); $i++)  
